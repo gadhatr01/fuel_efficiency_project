@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Fuel Efficiency Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚗 FUEL EFFICIENCY PREDICTION</h1>
+
+    <form action="/result" method="POST">
+
+        <!-- Cylinders -->
+        <label>Cylinders</label>
+
+        <select name="cylinders">
+            <option value="0">Select Cylinders</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+
+        </select>
+
+        <!-- Displacement -->
+        <label>Displacement</label>
+
+        <select name="displacement">
+
+            <option value="0">Select Displacement</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            <option value="300">300</option>
+            <option value="350">350</option>
+            <option value="400">400</option>
+
+        </select>
+
+        <!-- Horsepower -->
+        <label>Horsepower</label>
+
+        <select name="horsepower">
+            <option value="0">Select Horsepower</option>
+            <option value="50">50</option>
+            <option value="75">75</option>
+            <option value="100">100</option>
+            <option value="125">125</option>
+            <option value="150">150</option>
+            <option value="175">175</option>
+            <option value="200">200</option>
+
+        </select>
+
+        <!-- Weight -->
+        <label>Weight</label>
+
+        <select name="weight">
+            <option value="0">Select Weight</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+            <option value="2000">2000</option>
+            <option value="2500">2500</option>
+            <option value="3000">3000</option>
+            <option value="3500">3500</option>
+            <option value="4000">4000</option>
+            <option value="4500">4500</option>
+
+        </select>
+
+        <!-- Acceleration -->
+        <label>Acceleration</label>
+
+        <select name="acceleration">
+            <option value="0">Select Acceleration</option>
+
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+
+        </select>
+
+        <!-- Model Year -->
+        <label>Model Year</label>
+
+        <select name="model_year">
+            <option value="0">Select Model Year</option>
+            <option value="70">1970</option>
+            <option value="72">1972</option>
+            <option value="74">1974</option>
+            <option value="76">1976</option>
+            <option value="78">1978</option>
+            <option value="80">1980</option>
+            <option value="82">1982</option>
+
+        </select>
+
+        <!-- Origin -->
+        <label>Origin</label>
+
+        <select name="origin">
+            <option value="1">Select Origin</option>
+            <option value="1">USA</option>
+
+            <option value="2">Europe</option>
+
+            <option value="3">Japan</option>
+
+        </select>
+
+        <button type="submit">
+
+            PREDICT MPG
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
